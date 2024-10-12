@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button to Button</title>
+    <style>
+        #secondButton {
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Button -->
+    <button id="firstButton" onclick="showSecondButton()">Click me to show another button</button>
+
+    <!-- Second Button (Hidden initially) -->
+    <button id="secondButton">Here is the second button!</button>
+
+    <script>
+        function showSecondButton() {
+            document.getElementById("secondButton").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
